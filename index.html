@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>mine</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__common">
+            <nav class="container__common__navigation">
+                <a href="#" class="container__common__navigation__logo">Aliane</a>
+                <div class="container__common__navigation__nav-link">
+                    <a class="active" href="index.html">home</a>
+                    <a href="about me.html">about me</a>
+                    <a href="services.html">services</a>
+                    <a href="contact me.html">contact me</a>
+                </div>
+            </nav>
+           
+            <div class="container__common__content">
+                <div class="container__common__content__div-img">
+                    <img src="https://res.cloudinary.com/dbtchmsoy/image/upload/v1719840131/WhatsApp_Image_2024-06-13_at_5.12.50_PM_1_meflvb.jpg">
+                </div>
+                <div class="container__common__content__div-text">
+                    <h1>Hi,I'am Aliane</h1>
+                    <h4>Web developer</h4>
+                    <p>Welcome to my potifolio,i 'm based in kampala. 
+                    <br/>High level experience in web design and <br/>
+                    development knawledge producing quality work.<br/>
+                    </p>
+                    <a onclick=contactMe() href="#" >contact me</a>
+                </div>
+                
+            </div>
+            <div class="container__common__soc-link">
+                <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                <i class="fa-brands fa-discord" style="color: #000000;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about__me">
+            <h1>About <span>me</span></h1>
+            <h2>Who i 'm</h2> 
+            <p>I' m aliane  a front-end web developer<br>based out of kampala.
+             i' m web developer <br>possionate about creating interactive<br> applications and
+             experiences on the<br> web i like combining the words of<br> logic and creative
+             design to make <br>eye-catching, accessible ,and user.<br>I have two years of experience
+              and there<br> are sites that have been created and<br> completed after work I like to
+              increase<br> this knowledge through searching on internet. 
+            </p>
+            <a href="#">My Work</a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="services__one">
+            <h1>Services</h1>
+            <div class="services__one__file">
+                <div class="services__one__file__two">
+                    <i class="fa-solid fa-code"></i>
+                    <p>Every website should be build  with two
+                    primary goals firstly its needs to work
+                    a cross all devices. secondary it needs to be
+                    tast as possible
+                   </p>
+                </div>
+                <div class="services__one__file__three">
+                    <i class="fa-solid fa-laptop"></i>
+                    <p>High level experience in web design and
+                    development knowledge producing quality wark.</p>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="contact">
+        <h1>contact <span>me</span></h1>
+        <div class="contact__very">
+            <div class="contact__very__media">
+                <a href="#" class="contact__very__media__logo">Aliane</a>
+                <div class="contact__very__media__soc-link">
+                    <i class="fa-brands fa-facebook" style="color: #07aad7;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #07aad7;"></i>
+                    <i class="fa-brands fa-discord" style="color: #07aad7;"></i>
+                </div>
+            </div>
+            <div class="contact__very__last">
+                <input class="email" type="email" id="email" placeholder="Email" />
+                <input class="password" type="password" id="password" placeholder="password" />
+                <div class="contact__very__last__none">
+                    <input class="message" type="message" id="message" placeholder="message" />
+                    <button onclick=greetUser()>send</button>
+                </div>
+            </div>
+            <p id="userName"></p>
+        </div>
+        <script>
+             function contactMe(){
+                alert("hello' what can i help you? ") 
+             }
+             function greetUser(){
+                    let name = document.getElementById("message").value;
+                    let message = "thank you " + name + " , welcame" ;
+
+                    document.getElementById("userName").innertext = message;
+                }
+        </script>
+    </div>
+</body>
+</html>
